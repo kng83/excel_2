@@ -24,4 +24,4 @@ var newWs = xlsx.utils.json_to_sheet(newData);
 //do nowego zeszytu dajemy nasz nowy arkusz 
 xlsx.utils.book_append_sheet(newWB, newWs, "New Data");
 //zapisujemy jako nowy plik
-xlsx.writeFile(newWB, "./files/NewData.xlsx");
+xlsx.writeFile(newWB, "./files/NewData.xlsx");//

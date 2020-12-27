@@ -1,6 +1,7 @@
 
 import path from 'path';
 import fs from 'fs';
+//import NewNodemonPlugin from './common/newNodemonPlugin';
 import NodemonPlugin from 'nodemon-webpack-plugin';
 import webpack from 'webpack';
 
@@ -57,7 +58,7 @@ const config: webpack.Configuration = {
   devtool: 'source-map',
   externals: nodeModules,
   plugins: [
-    new NodemonPlugin()
+    <any>(new NodemonPlugin())
   ]
 };
 
